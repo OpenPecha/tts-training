@@ -1,5 +1,5 @@
 
-##Model Training and Deployment Process  
+# Model Training and Deployment Process  
 
 The Tibetan Text-to-Speech (TTS) model was trained following the guidelines provided in the [AI4Bharat](https://github.com/AI4Bharat/Indic-TTS). I initially experimented with an existing Hindi TTS model to familiarize myself with the training pipeline and workflow. This provided a clearer understanding of how the training process operates, including data preprocessing, model configuration, and inference generation.  
 
@@ -11,7 +11,7 @@ During experimentation, it became evident that the Hindi model performed better 
 - Hindi has pre-existing phoneme support in AI4Bharat’s framework, whereas Tibetan required additional adjustments.  
 
 
-##Configuration Adjustments for the Tibetan Model  
+## Configuration Adjustments for the Tibetan Model  
 
 To adapt the model for Tibetan, several key modifications were made to the configuration files:  
 - Phoneme Language Setting:  
@@ -23,7 +23,7 @@ Since "bo" was not directly supported, Wylie transliteration was incorporated as
 This helped in maintaining phonetic accuracy while mapping Tibetan characters to a format that the model could process effectively.  
 
 
-##Training Process  
+## Training Process  
 
 - Once the configurations were finalized, model training was initiated on Vast.ai, a cloud-based GPU platform. The FastPitch model was trained for 2500 epochs, and the training process took approximately eight days. 
 - Throughout the training process, model performance metrics, loss curves, and other relevant statistics were tracked and visualized using Weights & Biases (WandB). These logs provided real-time insights into model progression and helped in debugging potential issues.  
@@ -48,7 +48,7 @@ This helped in maintaining phonetic accuracy while mapping Tibetan characters to
 
 
 
-##Challenges Faced During Training
+## Challenges Faced During Training
 
 The training process encountered multiple challenges, primarily due to initial errors in phoneme handling and dataset limitations:
 - Phoneme Recognition Issues: The model did not recognize "bo" as a valid phoneme language, requiring the use of "en" as a fallback. This caused some inconsistencies in pronunciation, necessitating additional tweaks to Wylie's transliteration.
