@@ -43,7 +43,7 @@ This helped in maintaining phonetic accuracy while mapping Tibetan characters to
 
 
 
- <img width="1440" alt="screenshot1" src="https://github.com/user-attachments/assets/c0aaa1b1-88dc-45cf-a3bd-e6448da03178" />
+ <img width="1440" alt="screenshot" src="https://github.com/user-attachments/assets/997add36-140d-45f0-a22e-e060f5832c1e" />
 
 
 
