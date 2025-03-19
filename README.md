@@ -1,6 +1,8 @@
+
 ##Model Training and Deployment Process  
 
 The Tibetan Text-to-Speech (TTS) model was trained following the guidelines provided in the [AI4Bharat](https://github.com/AI4Bharat/Indic-TTS). I initially experimented with an existing Hindi TTS model to familiarize myself with the training pipeline and workflow. This provided a clearer understanding of how the training process operates, including data preprocessing, model configuration, and inference generation.  
+
 
 ## Comparative Performance: Hindi vs. Tibetan Model  
 
@@ -20,15 +22,18 @@ To circumvent this issue, "en" (English) was set as the fallback language to ens
 Since "bo" was not directly supported, Wylie transliteration was incorporated as an intermediary representation.  
 This helped in maintaining phonetic accuracy while mapping Tibetan characters to a format that the model could process effectively.  
 
+
 ##Training Process  
 
 - Once the configurations were finalized, model training was initiated on Vast.ai, a cloud-based GPU platform. The FastPitch model was trained for 2500 epochs, and the training process took approximately eight days. 
 - Throughout the training process, model performance metrics, loss curves, and other relevant statistics were tracked and visualized using Weights & Biases (WandB). These logs provided real-time insights into model progression and helped in debugging potential issues.  
 
+
 ## Inference and Audio Generation
 
 - After successful training, the trained model was tested by running inference. The model was able to generate Tibetan speech from input text, validating that the training process had been effective.  
 - To make the model more accessible, a Gradio-based API was developed for local testing. A simple script was written to host the model via a web-based interface, allowing a user to interact with it easily.  
+
 
 ## Deployment via Gradio API  
 
@@ -37,7 +42,10 @@ This helped in maintaining phonetic accuracy while mapping Tibetan characters to
 - The resulting Tibetan speech audio is played back to the user, demonstrating the successful application of the trained model. 
 
 
+
  <img width="1440" alt="screenshot1" src="https://github.com/user-attachments/assets/c0aaa1b1-88dc-45cf-a3bd-e6448da03178" />
+
+
 
 
 ##Challenges Faced During Training
